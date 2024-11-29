@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة صيانة السيارات المستأجرة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>إدارة صيانة السيارات المستأجرة</h1>
+    </header>
+    <main>
+        <section class="car-list">
+            <h2>قائمة السيارات</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>رقم السيارة</th>
+                        <th>الموديل</th>
+                        <th>تاريخ الصيانة</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>تويوتا كامري</td>
+                        <td>2024-01-10</td>
+                        <td>مستعد للصيانة</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>هوندا سيفيك</td>
+                        <td>2023-12-25</td>
+                        <td>تم الصيانة</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="maintenance-form">
+            <h2>تسجيل صيانة جديدة</h2>
+            <form>
+                <label for="car-id">رقم السيارة:</label>
+                <input type="text" id="car-id" required>
+                
+                <label for="model">الموديل:</label>
+                <input type="text" id="model" required>
+                
+                <label for="maintenance-date">تاريخ الصيانة:</label>
+                <input type="date" id="maintenance-date" required>
+                
+                <label for="status">الحالة:</label>
+                <select id="status">
+                    <option value="مستعد للصيانة">مستعد للصيانة</option>
+                    <option value="تم الصيانة">تم الصيانة</option>
+                </select>
+                
+                <button type="submit">إضافة صيانة</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

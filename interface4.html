@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../project academy aspu rental car/inter face4.css">
+    <title>إضافة سيارة - Car Rental Site</title>
+</head>
+<body>
+    <div class="container">
+        <h1>إضافة سيارة جديدة</h1>
+        <form id="car-form">
+            <label for="car-model">موديل السيارة:</label>
+            <input type="text" id="car-model" name="car-model" required>
+
+            <label for="car-year">سنة الصنع:</label>
+            <input type="number" id="car-year" name="car-year" min="1900" max="2024" required>
+
+            <label for="car-price">سعر الإيجار اليومي:</label>
+            <input type="number" id="car-price" name="car-price" required>
+
+            <label for="car-image">رابط صورة السيارة:</label>
+            <input type="url" id="car-image" name="car-image" required>
+
+            <button type="submit">إضافة السيارة</button>
+        </form>
+    </div>
+</body>
+</html>
